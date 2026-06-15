@@ -104,7 +104,7 @@ function TurtleCalendar:init()
 	self.reset_pattern = string.gsub( INSTANCE_RESET_SUCCESS, "%%s", "(.+)" )
 	self.timers = {
 		[ "Nordanaar" ] = {
-			[ "raid40" ] = { interval = 7, anchor = m.time_utc( { year = 2025, month = 9, day = 3, hour = 3 } ) },
+			[ "raid40" ] = { interval = 7, anchor = m.time_utc( { year = 2026, month = 6, day = 17, hour = 2 } ) },
 			[ "ony" ] = { interval = 5, anchor = m.time_utc( { year = 2025, month = 9, day = 1, hour = 3 } ) },
 			[ "kara" ] = { interval = 5, anchor = m.time_utc( { year = 2025, month = 9, day = 2, hour = 3 } ) },
 			[ "zg" ] = { interval = 3, anchor = m.time_utc( { year = 2025, month = 8, day = 30, hour = 3 } ) },
@@ -114,7 +114,7 @@ function TurtleCalendar:init()
 			[ "dmf" ] = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 30, hour = 23 } ) }
 		},
 		[ "N'Zoth" ] = {
-    [ "raid40" ] = { interval = 7, anchor = m.time_utc( { year = 2025, month = 9, day = 3, hour = 3 } ) },
+    [ "raid40" ] = { interval = 7, anchor = m.time_utc( { year = 2026, month = 6, day = 17, hour = 2 } ) },
     [ "ony" ]   = { interval = 5, anchor = m.time_utc( { year = 2025, month = 9, day = 1, hour = 3 } ) },
     [ "kara" ]  = { interval = 5, anchor = m.time_utc( { year = 2025, month = 9, day = 2, hour = 3 } ) },
     [ "zg" ]    = { interval = 3, anchor = m.time_utc( { year = 2025, month = 8, day = 30, hour = 3 } ) },
@@ -124,7 +124,7 @@ function TurtleCalendar:init()
     [ "dmf" ]   = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 30, hour = 23 } ) }
 },
 		[ "Ambershire" ] = {
-			[ "raid40" ] = { interval = 7, anchor = m.time_utc( { year = 2025, month = 9, day = 3, hour = 3 } ) },
+			[ "raid40" ] = { interval = 7, anchor = m.time_utc( { year = 2026, month = 6, day = 17, hour = 2 } ) },
 			[ "ony" ] = { interval = 5, anchor = m.time_utc( { year = 2025, month = 9, day = 1, hour = 3 } ) },
 			[ "kara" ] = { interval = 5, anchor = m.time_utc( { year = 2025, month = 9, day = 2, hour = 3 } ) },
 			[ "zg" ] = { interval = 3, anchor = m.time_utc( { year = 2025, month = 8, day = 30, hour = 3 } ) },
