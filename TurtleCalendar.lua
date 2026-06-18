@@ -116,7 +116,7 @@ function TurtleCalendar:init()
 		[ "N'Zoth" ] = {
     [ "raid40" ] = { interval = 7, anchor = m.time_utc( { year = 2026, month = 6, day = 17, hour = 1 } ) },
     [ "ony" ]   = { interval = 5, anchor = m.time_utc( { year = 2026, month = 6, day = 17, hour = 1 } ) },
-    [ "kara" ]  = { interval = 5, anchor = m.time_utc( { year = 2025, month = 9, day = 2, hour = 3 } ) },
+    [ "kara" ]  = { interval = 5, anchor = m.time_utc( { year = 2026, month = 6, day = 17, hour = 1 } ) },
     [ "zg" ]    = { interval = 3, anchor = m.time_utc( { year = 2025, month = 8, day = 30, hour = 3 } ) },
     [ "tmh" ]   = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 29, hour = 3 } ) },
     [ "eom" ]   = { interval = 14, anchor = m.time_utc( { year = 2025, month = 4, day = 7, hour = 23 } ) },
