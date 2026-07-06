@@ -304,7 +304,9 @@ m.instances[ instanceName ] = {
 		end
 	end
 
-	m.gdb.lockouts[ m.lockout_realm or m.realm ][ m.player ] = m.instances
+	if m.gdb and m.gdb.lockouts and m.player then
+		m.gdb.lockouts[ m.lockout_realm or m.realm ][ m.player ] = m.instances
+	end
 end
 
 function TurtleCalendar.events.PLAYER_REGEN_DISABLED()
@@ -1332,6 +1334,7 @@ end
 
 function TurtleCalendar.on_resize()
 	local self = m.popup
+	if not m.width or not m.height then return end
 	local min_width, max_width = m.width / 1.7, m.width
 	local width = math.max( min_width, math.min( max_width, self:GetWidth() ) )
 	local scale = (width - (m.frame_padding * 2)) / (m.width - (m.frame_padding * 2))
