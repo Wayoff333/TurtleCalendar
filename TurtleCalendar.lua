@@ -111,7 +111,7 @@ function TurtleCalendar:init()
 			[ "tmh" ] = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 29, hour = 3 } ) },
 			[ "eom" ] = { interval = 14, anchor = m.time_utc( { year = 2025, month = 4, day = 7, hour = 23 } ) },
 			[ "bg" ] = { interval = 1, anchor = m.time_utc( { year = 2025, month = 9, day = 0, hour = 23 } ) },
-			[ "dmf" ] = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 30, hour = 23 } ) }
+			[ "dmf" ] = { interval = 7, anchor = 1784715030 }
 		},
 		[ "N'Zoth" ] = {
     [ "raid40" ] = { interval = 7, anchor = m.time_utc( { year = 2026, month = 6, day = 17, hour = 1 } ) },
@@ -121,7 +121,7 @@ function TurtleCalendar:init()
     [ "tmh" ]   = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 29, hour = 3 } ) },
     [ "eom" ]   = { interval = 14, anchor = m.time_utc( { year = 2025, month = 4, day = 7, hour = 23 } ) },
     [ "bg" ]    = { interval = 1, anchor = m.time_utc( { year = 2025, month = 9, day = 0, hour = 23 } ) },
-    [ "dmf" ]   = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 30, hour = 23 } ) }
+    [ "dmf" ]   = { interval = 7, anchor = 1784715030 }
 },
 		[ "C'Thun" ] = {
 			[ "raid40" ] = { interval = 7, anchor = m.time_utc( { year = 2026, month = 6, day = 17, hour = 1 } ) },
@@ -131,7 +131,7 @@ function TurtleCalendar:init()
 			[ "tmh" ]   = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 29, hour = 3 } ) },
 			[ "eom" ]   = { interval = 14, anchor = m.time_utc( { year = 2025, month = 4, day = 7, hour = 23 } ) },
 			[ "bg" ]    = { interval = 1, anchor = m.time_utc( { year = 2025, month = 9, day = 0, hour = 23 } ) },
-			[ "dmf" ]   = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 30, hour = 23 } ) }
+			[ "dmf" ]   = { interval = 7, anchor = 1784715030 }
 		},
 		[ "Y'Shaarj" ] = {
 			[ "raid40" ] = { interval = 7, anchor = m.time_utc( { year = 2026, month = 6, day = 17, hour = 1 } ) },
@@ -141,7 +141,7 @@ function TurtleCalendar:init()
 			[ "tmh" ]   = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 29, hour = 3 } ) },
 			[ "eom" ]   = { interval = 14, anchor = m.time_utc( { year = 2025, month = 4, day = 7, hour = 23 } ) },
 			[ "bg" ]    = { interval = 1, anchor = m.time_utc( { year = 2025, month = 9, day = 0, hour = 23 } ) },
-			[ "dmf" ]   = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 30, hour = 23 } ) }
+			[ "dmf" ]   = { interval = 7, anchor = 1784715030 }
 		},
 		[ "Ambershire" ] = {
 			[ "raid40" ] = { interval = 7, anchor = m.time_utc( { year = 2026, month = 6, day = 17, hour = 1 } ) },
@@ -151,7 +151,7 @@ function TurtleCalendar:init()
 			[ "tmh" ] = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 29, hour = 3 } ) },
 			[ "eom" ] = { interval = 14, anchor = m.time_utc( { year = 2025, month = 4, day = 7, hour = 23 } ) },
 			[ "bg" ] = { interval = 1, anchor = m.time_utc( { year = 2025, month = 9, day = 0, hour = 23 } ) },
-			[ "dmf" ] = { interval = 7, anchor = m.time_utc( { year = 2025, month = 8, day = 30, hour = 23 } ) }
+			[ "dmf" ] = { interval = 7, anchor = 1784715030 }
 		},
 	}
 
@@ -1251,7 +1251,7 @@ function TurtleCalendar.refresh()
 	else
 		m.boxes.dmf.header:SetText( dmf or "" )
 		m.boxes.dmf.sub1:SetText( m.T[ "Darkmoon Faire position" ] )
-		m.boxes.dmf.sub2:SetText( m.T[ "Moves out every Sunday" ] )
+		m.boxes.dmf.sub2:SetText( m.T[ "Moves out every Wednesday" ] )
 	end
 
 	m.reorder()
