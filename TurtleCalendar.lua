@@ -1240,8 +1240,8 @@ function TurtleCalendar.refresh()
 	-- Darkmoon Fair
 	local dmf_idx = mod( math.floor( (m.sday - 3) / m.timers[ m.realm ][ "dmf" ].interval ), 2 ) + 1
 	local now = date( "!*t", m.get_server_time() )
-	local dmf = dmf_idx == 1 and m.T[ "Thunder Bluff" ] or m.T[ "Goldshire" ]
-	local dmf_img = dmf_idx == 1 and "Thunder Bluff" or "Goldshire"
+	local dmf = dmf_idx == 1 and m.T[ "Goldshire" ] or m.T[ "Thunder Bluff" ]
+	local dmf_img = dmf_idx == 1 and "Goldshire" or "Thunder Bluff"
 
 	m.boxes.dmf.bg:SetTexture( m.images[ dmf_img ].image )
 	if now.wday == 4 then
